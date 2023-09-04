@@ -86,3 +86,22 @@
       }
     }
   }
+  .header-down {
+    margin-top: 10px;
+    border-bottom: 5px solid $ocher-light;
+    height: 80px;
+    @media (max-width: 768px) {
+      border: none;
+      display: none;
+    }
+    .list {
+      display: flex;
+      justify-content: space-around;
+      font: bolder 18px $Roboto;
+      color: $ocher;
+      list-style: none;
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }

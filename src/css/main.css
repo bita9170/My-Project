@@ -75,4 +75,26 @@ body {
   background-color: #D5BA89;
 }
 
+.header-down {
+  margin-top: 10px;
+  border-bottom: 5px solid #D5BA89;
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .header-down {
+    border: none;
+    display: none;
+  }
+}
+.header-down .list {
+  display: flex;
+  justify-content: space-around;
+  font: bolder 18px "Roboto Condensed", sans-serif;
+  color: #94712f;
+  list-style: none;
+}
+.header-down .list :hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */
