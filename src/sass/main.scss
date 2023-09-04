@@ -105,3 +105,100 @@
       }
     }
   }
+
+  .main-container {
+    background-image: url(../img/dada_design-9KGB4HspwsM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 55px;
+    animation: zoom 15s ease infinite alternate;
+  
+    @media (max-width: 768px) {
+      background-size: contain;
+      background-position: top;
+      animation: none;
+      margin-top: 0px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .dream-home {
+        color: $my-white;
+        margin-top: 25px;
+        color: $my-white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 70px;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    .text-main {
+      position: absolute;
+      font-size: 18px;
+      top: 200px;
+      right: 500px;
+      width: 150px;
+      height: 300px;
+      @media (max-width: 1219px) {
+        width: 300px;
+        height: 100px;
+      }
+      @media (max-width: 770px) {
+        width: 300px;
+        height: 100px;
+        left: 50px;
+      }
+    }
+  
+    .fa-solid fa-arrow-down {
+      color: black;
+      font-size: 20px;
+    }
+  }
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  .box-container {
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid $ocher;
+    border-bottom: 4px solid $ocher;
+    .box {
+      text-align: center;
+      border: 6px solid $ocher-light;
+      align-items: center;
+      margin: 40px;
+      width: 300px;
+      height: 200px;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+  
+      img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+    h1 {
+      font: $Roboto;
+      font-size: 50px;
+      margin: 80px 0;
+      color: rgba(0, 0, 0, 0.752);
+      text-align: center;
+    }
+  }
+  
+ 
+  
