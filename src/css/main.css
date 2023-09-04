@@ -6,10 +6,28 @@
 
 body {
   background-color: #fffdfa;
+  overflow-x: hidden;
 }
 
 .header {
   text-transform: uppercase;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  background-color: #fffdfa;
+  top: 0;
+}
+.header .header-inner {
+  position: relative;
+}
+.header .header-inner .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.header .header-inner .logo img {
+  height: 100px;
+  width: auto;
 }
 .header .header-top {
   display: flex;
@@ -102,8 +120,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  margin-top: 55px;
+  height: calc(100vh - 175px);
+  margin-top: 175px;
   animation: zoom 15s ease infinite alternate;
 }
 @media (max-width: 768px) {
