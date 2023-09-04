@@ -1,5 +1,107 @@
 @import "variables";
 
-body {
-  background-color: red;
-}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: $my-white;
+  }
+  
+  .header {
+    text-transform: uppercase;
+  
+  
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-bottom: 3px solid $ocher-light;
+  
+      @media (max-width: 768px) {
+        justify-content: start;
+      }
+  
+      .header-btn {
+        background-color: $my-white;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        border: 5px solid $ocher;
+        color: $ocher;
+        font: bolder 18px $Roboto;
+        margin: 10px 20px 10px 50px;
+        &:hover {
+          cursor: pointer;
+          border: 5px solid $ocher-light;
+        }
+      }
+  
+      .quiz {
+        @media (max-width: 768px) {
+          display: none;
+          .header-button:hover {
+            cursor: pointer;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+  
+          .quiz-box {
+            .quiz-right {
+              width: 0px;
+            }
+  
+            .quiz-left {
+              width: 100%;
+            }
+          }
+        }
+        .style-quiz {
+          font: bold 18px $Roboto;
+          color: #94712f;
+          text-align: center;
+        }
+        .quiz-box {
+          display: flex;
+          margin-top: 5px;
+          width: 160px;
+  
+          .quiz-left,
+          .quiz-right {
+            width: 50%;
+            height: 5px;
+            transition: width 0.5s linear;
+          }
+  
+          .quiz-left {
+            background-color: $ocher;
+          }
+          .quiz-right {
+            background-color: $ocher-light;
+          }
+        }
+      }
+    }
+  }
+  .header-down {
+    margin-top: 10px;
+    border-bottom: 5px solid $ocher-light;
+    height: 80px;
+    @media (max-width: 768px) {
+      border: none;
+      display: none;
+    }
+    .list {
+      display: flex;
+      justify-content: space-around;
+      font: bolder 18px $Roboto;
+      color: $ocher;
+      list-style: none;
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }

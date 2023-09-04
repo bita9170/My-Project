@@ -1,5 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: red;
+  background-color: #fffdfa;
+}
+
+.header {
+  text-transform: uppercase;
+}
+.header .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-bottom: 3px solid #D5BA89;
+}
+@media (max-width: 768px) {
+  .header .header-top {
+    justify-content: start;
+  }
+}
+.header .header-top .header-btn {
+  background-color: #fffdfa;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  border: 5px solid #94712f;
+  color: #94712f;
+  font: bolder 18px "Roboto Condensed", sans-serif;
+  margin: 10px 20px 10px 50px;
+}
+.header .header-top .header-btn:hover {
+  cursor: pointer;
+  border: 5px solid #D5BA89;
+}
+@media (max-width: 768px) {
+  .header .header-top .quiz {
+    display: none;
+  }
+  .header .header-top .quiz .header-button:hover {
+    cursor: pointer;
+  }
+}
+.header .header-top .quiz:hover {
+  cursor: pointer;
+}
+.header .header-top .quiz:hover .quiz-box .quiz-right {
+  width: 0px;
+}
+.header .header-top .quiz:hover .quiz-box .quiz-left {
+  width: 100%;
+}
+.header .header-top .quiz .style-quiz {
+  font: bold 18px "Roboto Condensed", sans-serif;
+  color: #94712f;
+  text-align: center;
+}
+.header .header-top .quiz .quiz-box {
+  display: flex;
+  margin-top: 5px;
+  width: 160px;
+}
+.header .header-top .quiz .quiz-box .quiz-left,
+.header .header-top .quiz .quiz-box .quiz-right {
+  width: 50%;
+  height: 5px;
+  transition: width 0.5s linear;
+}
+.header .header-top .quiz .quiz-box .quiz-left {
+  background-color: #94712f;
+}
+.header .header-top .quiz .quiz-box .quiz-right {
+  background-color: #D5BA89;
+}
+
+.header-down {
+  margin-top: 10px;
+  border-bottom: 5px solid #D5BA89;
+  height: 80px;
+}
+@media (max-width: 768px) {
+  .header-down {
+    border: none;
+    display: none;
+  }
+}
+.header-down .list {
+  display: flex;
+  justify-content: space-around;
+  font: bolder 18px "Roboto Condensed", sans-serif;
+  color: #94712f;
+  list-style: none;
+}
+.header-down .list :hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
