@@ -118,10 +118,12 @@ body {
     }
   }
 }
-.header-down {
-  margin-top: 10px;
+.header-down {  
   border-bottom: 5px solid $ocher-light;
   height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   @media (max-width: 768px) {
     border: none;
     display: none;
@@ -129,6 +131,7 @@ body {
   .list {
     display: flex;
     justify-content: space-around;
+    width: 70%;
     // align-items: center;
     list-style: none;
 
