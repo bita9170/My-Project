@@ -53,9 +53,17 @@ body {
       color: $ocher;
       font: bolder 18px $Roboto;
       margin: 10px 20px 10px 50px;
+      a{
+        text-decoration: none;
+        color: $ocher;
+        &:hover {
+          color: rgb(109, 72, 25);;
+        }
+      }
       &:hover {
         cursor: pointer;
         border: 5px solid rgb(109, 72, 25);
+        color: rgb(109, 72, 25);
       }
     }
 

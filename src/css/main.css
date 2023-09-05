@@ -50,9 +50,17 @@ body {
   font: bolder 18px "Roboto Condensed", sans-serif;
   margin: 10px 20px 10px 50px;
 }
+.header .header-top .header-btn a {
+  text-decoration: none;
+  color: #94712f;
+}
+.header .header-top .header-btn a:hover {
+  color: rgb(109, 72, 25);
+}
 .header .header-top .header-btn:hover {
   cursor: pointer;
   border: 5px solid rgb(109, 72, 25);
+  color: rgb(109, 72, 25);
 }
 @media (max-width: 768px) {
   .header .header-top .quiz {
