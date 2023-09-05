@@ -1,244 +1,240 @@
 @import "variables";
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $Roboto;
-  }
-  
-  body {
-    background-color: $my-white;
-    overflow-x: hidden;
-  }
-  
-  .header {
-    text-transform: uppercase;
-    position: fixed;
-    z-index: 10000;
-    width: 100%;
-    background-color: $my-white;
-    top:0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Roboto;
+}
 
-    .header-inner {
-      position: relative;
+body {
+  background-color: $my-white;
+  overflow-x: hidden;
+}
 
-      .logo {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+.header {
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  background-color: $my-white;
+  top: 0;
 
-        img {
-          height: 100px;
-          width: auto;
-        }
-      }
-    }
-  
-  
-    .header-top {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      border-bottom: 3px solid $ocher-light;
-  
-      @media (max-width: 768px) {
-        justify-content: start;
-      }
-  
-      .header-btn {
-        background-color: $my-white;
-        padding: 15px 40px;
-        text-transform: uppercase;
-        border: 5px solid $ocher;
-        color: $ocher;
-        font: bolder 18px $Roboto;
-        margin: 10px 20px 10px 50px;
-        &:hover {
-          cursor: pointer;
-          border: 5px solid $ocher-light;
-        }
-      }
-  
-      .quiz {
-        @media (max-width: 768px) {
-          display: none;
-          .header-button:hover {
-            cursor: pointer;
-          }
-        }
-        &:hover {
-          cursor: pointer;
-  
-          .quiz-box {
-            .quiz-right {
-              width: 0px;
-            }
-  
-            .quiz-left {
-              width: 100%;
-            }
-          }
-        }
-        .style-quiz {
-          font-size: 18px;
-          color: #94712f;
-          text-align: center;
-        }
-        .quiz-box {
-          display: flex;
-          margin-top: 5px;
-          width: 160px;
-  
-          .quiz-left,
-          .quiz-right {
-            width: 50%;
-            height: 5px;
-            transition: width 0.5s linear;
-          }
-  
-          .quiz-left {
-            background-color: $ocher;
-          }
-          .quiz-right {
-            background-color: $ocher-light;
-          }
-        }
-      }
-    }
-  }
-  .header-down {
-    margin-top: 10px;
-    border-bottom: 5px solid $ocher-light;
-    height: 80px;
-    @media (max-width: 768px) {
-      border: none;
-      display: none;
-    }
-    .list {
-      display: flex;
-      justify-content: space-around;
-      
-      list-style: none;
+  .header-inner {
+    position: relative;
 
-      li {
-          
-        a {          
-          text-decoration: none;
-          font-size: 18px;
-          font-weight: bold;
-          color: $ocher;
-
-          &:hover {
-            color: black;
-          }
-        }
-      }
-    }
-  }
-
-  .main-container {
-    background-image: url(../img/dada_design-9KGB4HspwsM-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 175px);
-    margin-top: 175px;
-    animation: zoom 15s ease infinite alternate;
-
-  
-    @media (max-width: 768px) {
-      background-size: contain;
-      background-position: top;
-      animation: none;
-      margin-top: 0px;
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  
-      .dream-home {
-        color: $my-white;
-        margin-top: 25px;
-        color: $my-white;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 70px;
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-    }
-    .text-main {
+    .logo {
       position: absolute;
-      font-size: 18px;
-      top: 200px;
-      right: 500px;
-      width: 150px;
-      height: 300px;
-      @media (max-width: 1219px) {
-        width: 300px;
+      top: 10px;
+      left: 10px;
+
+      img {
         height: 100px;
+        width: auto;
       }
-      @media (max-width: 770px) {
-        width: 300px;
-        height: 100px;
-        left: 50px;
-      }
-    }
-  
-    .fa-solid fa-arrow-down {
-      color: black;
-      font-size: 20px;
     }
   }
-  @keyframes zoom {
-    0% {
-      transform: scale(1);
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 3px solid $ocher-light;
+
+    @media (max-width: 768px) {
+      justify-content: start;
     }
-    100% {
+
+    .header-btn {
+      background-color: $my-white;
+      padding: 15px 40px;
+      text-transform: uppercase;
+      border: 5px solid $ocher;
+      color: $ocher;
+      font: bolder 18px $Roboto;
+      margin: 10px 20px 10px 50px;
+      &:hover {
+        cursor: pointer;
+        border: 5px solid rgb(109, 72, 25);
+      }
+    }
+
+    .quiz {
+      @media (max-width: 768px) {
+        display: none;
+        .header-button:hover {
+          cursor: pointer;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+
+        .quiz-box {
+          .quiz-right {
+            width: 0px;
+          }
+
+          .quiz-left {
+            width: 100%;
+          }
+        }
+      }
+      .style-quiz {
+        font-size: 18px;
+        color: #94712f;
+        text-align: center;
+        font-weight: bold;
+        &:hover {
+          color: $ocher-light;
+        }
+      }
+      .quiz-box {
+        display: flex;
+        margin-top: 5px;
+        width: 160px;
+
+        .quiz-left,
+        .quiz-right {
+          width: 50%;
+          height: 5px;
+          transition: width 0.5s linear;
+        }
+
+        .quiz-left {
+          background-color: $ocher;
+        }
+        .quiz-right {
+          background-color: $ocher-light;
+        }
+      }
+    }
+  }
+}
+.header-down {
+  margin-top: 10px;
+  border-bottom: 5px solid $ocher-light;
+  height: 80px;
+  @media (max-width: 768px) {
+    border: none;
+    display: none;
+  }
+  .list {
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: $ocher;
+        &:hover {
+          color: $ocher-light;
+        }
+      }
+    }
+  }
+}
+
+.main-container {
+  background-image: url(../img/dada_design-9KGB4HspwsM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 175px);
+  margin-top: 175px;
+  animation: zoom 15s ease infinite alternate;
+
+  @media (max-width: 768px) {
+    background-size: contain;
+    background-position: top;
+    animation: none;
+    margin-top: 0px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .dream-home {
+      color: $my-white;
+      margin-top: 25px;
+      color: $my-white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 70px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  .text-main {
+    position: absolute;
+    font-size: 18px;
+    top: 200px;
+    right: 500px;
+    width: 150px;
+    height: 300px;
+    @media (max-width: 1219px) {
+      width: 300px;
+      height: 100px;
+    }
+    @media (max-width: 770px) {
+      width: 300px;
+      height: 100px;
+      left: 50px;
+    }
+  }
+
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  border-top: 4px solid $ocher;
+  border-bottom: 4px solid $ocher;
+  margin-top: 50px;
+  .box {
+    text-align: center;
+    border: 6px solid $ocher-light;
+    align-items: center;
+    margin: 40px;
+    width: 300px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    &:hover {
       transform: scale(1.1);
     }
-  }
-  .box-container {
-    display: flex;
-    justify-content: center;
-    border-top: 4px solid $ocher;
-    border-bottom: 4px solid $ocher;
-    .box {
-      text-align: center;
-      border: 6px solid $ocher-light;
-      align-items: center;
-      margin: 40px;
-      width: 300px;
-      height: 200px;
-      transition: transform 0.3s ease;
-      &:hover {
-        transform: scale(1.1);
-      }
-  
-      img{
-        width: 100px;
-        height: 100px;
-      }
+    img {
+      width: 100px;
+      height: 100px;
     }
   }
-  h1 {
-    font: $Roboto;
-    font-size: 50px;
-    margin: 80px 0;
-    color: rgba(0, 0, 0, 0.752);
-    text-align: center;
-  }
-  
-  footer {
-    background-color: #333;
-    color: $my-white;
-    padding: 30px 0;
-  }
-  
+}
+
+h1 {
+  font: $Roboto;
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.752);
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: $my-white;
+  padding: 30px 0;
+
   .footer-content {
     display: flex;
     justify-content: space-between;
@@ -246,34 +242,82 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
   .footer-text {
     flex: 2;
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
   }
-  
-  .footer-text h3 {
-    font-size: 24px;
-  }
-  
-  .footer-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
   .social-icons {
     flex: 1;
     text-align: right;
+    a {
+      color: $ocher-light;
+      text-decoration: none;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+      a:hover {
+        color: $my-white;
+      }
+    }
   }
   
-  .social-icons a {
-    color: $ocher-light;
-    text-decoration: none;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+}
+
+
+.house-container {
+  margin-top: 250px;
+  margin-bottom: 150px;
+
+  p {
+    font-size: 21px;
+    text-align: center;
+    color: #474948;
+    margin-bottom: 50px;
   }
-  
-  .social-icons a:hover {
-    color: $my-white;
-  }
-  
+}
+
+.slider {
+  .slider-content {
+    width: 700px;
+    height: 500px;    
+    margin: 0 auto;
+    position: relative;
+    
+    .slider-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: 700px 100%;
+      transition: all 0.5s;
+
+      &.left {
+        width: 50%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        &:hover {
+          width: 100%;          
+        }
+      }
+
+      &.right { 
+        width: 50%;
+        top: 0;
+        right: 0;
+        background-position: top right;
+        z-index: 999;
+        &:hover  {
+          width: 100%;
+          z-index: 1001;
+        }
+      }
+    }
+}
+
+}
