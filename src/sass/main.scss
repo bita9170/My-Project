@@ -42,7 +42,7 @@ body {
     border-bottom: 3px solid $ocher-light;
 
     @media (max-width: 768px) {
-      justify-content: start;
+      justify-content: center;
     }
 
     .header-btn {
@@ -149,9 +149,10 @@ body {
 
   @media (max-width: 768px) {
     background-size: contain;
-    background-position: top;
+    // background-position: top;
     animation: none;
     margin-top: 0px;
+    height: 300px;
   }
   .content {
     display: flex;
@@ -177,15 +178,10 @@ body {
     right: 500px;
     width: 150px;
     height: 300px;
-    @media (max-width: 1219px) {
-      width: 300px;
-      height: 100px;
+    @media (max-width: 768px) {
+      display: none;
     }
-    @media (max-width: 770px) {
-      width: 300px;
-      height: 100px;
-      left: 50px;
-    }
+   
   }
 
 }
@@ -195,6 +191,19 @@ body {
   }
   100% {
     transform: scale(1.1);
+  }
+}
+h1 {
+  font: $Roboto;
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.752);
+  text-align: center;
+
+  @media (max-width: 768px) {
+    margin-top: 0;
+    font-size: 21px;
   }
 }
 .box-container {
@@ -221,14 +230,7 @@ body {
   }
 }
 
-h1 {
-  font: $Roboto;
-  font-size: 50px;
-  margin-top: 80px;
-  margin-bottom: 20px;
-  color: rgba(0, 0, 0, 0.752);
-  text-align: center;
-}
+
 
 footer {
   background-color: #333;
@@ -283,6 +285,8 @@ footer {
 }
 
 .slider {
+  margin-bottom: 100px;
+
   .slider-content {
     width: 700px;
     height: 500px;    
