@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $Roboto;
   }
   
   body {
@@ -81,7 +82,7 @@
           }
         }
         .style-quiz {
-          font: bold 18px $Roboto;
+          font-size: 18px;
           color: #94712f;
           text-align: center;
         }
@@ -118,11 +119,21 @@
     .list {
       display: flex;
       justify-content: space-around;
-      font: bolder 18px $Roboto;
-      color: $ocher;
+      
       list-style: none;
-      :hover {
-        cursor: pointer;
+
+      li {
+          
+        a {          
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+          color: $ocher;
+
+          &:hover {
+            color: black;
+          }
+        }
       }
     }
   }
