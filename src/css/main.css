@@ -305,4 +305,24 @@ footer .social-icons a a:hover {
   z-index: 1001;
 }
 
+.form-container {
+  margin-top: 170px;
+}
+.form-container label {
+  color: #474948;
+}
+.form-container form input {
+  border: 4px solid #94712f;
+}
+.form-container button {
+  background-color: #94712f;
+}
+.form-container button:hover {
+  background-color: rgb(109, 72, 25);
+}
+.form-container .head-form h1 {
+  font-size: 30px;
+  color: #474948;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -138,6 +138,7 @@ body {
   }
 }
 
+
 .main-container {
   background-image: url(../img/dada_design-9KGB4HspwsM-unsplash.jpg);
   background-repeat: no-repeat;
@@ -324,4 +325,31 @@ footer {
     }
 }
 
+}
+.form-container{
+  margin-top: 170px;
+
+  label{
+    color: #474948;
+  }
+
+  form {
+    input {
+      border: 4px solid $ocher
+    }
+  }
+
+  button{
+    background-color: #94712f;
+    &:hover{
+      background-color:  rgb(109, 72, 25);
+    }
+  }
+  .head-form{
+  
+    h1{
+      font-size: 30px;
+      color: #474948;
+    }
+  }
 }
